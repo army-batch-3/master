@@ -5,21 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class FleetRequest extends Model
 {
     use HasFactory;
 
-    protected $table = "users";
+    protected $table = "fleet_requests";
 
     protected $fillable = [
 
-        'account_type',
-        'avatar',
         'created_at',
-        'email',
-        'fullname',
         'id',
-        'password',
+        'requests',
+        'status',
+        'transportation_id',
         'updated_at',
 
     ];

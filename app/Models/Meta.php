@@ -5,21 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Meta extends Model
 {
     use HasFactory;
 
-    protected $table = "users";
+    protected $table = "metas";
 
     protected $fillable = [
 
-        'account_type',
-        'avatar',
         'created_at',
-        'email',
-        'fullname',
         'id',
-        'password',
+        'meta_category',
+        'meta_key',
+        'meta_value',
         'updated_at',
 
     ];

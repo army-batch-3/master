@@ -23,7 +23,7 @@ class CreateAssetsTable extends Migration
             ]);
 
             $table->string('name');
-            $table->longText('name')->nullable();
+            $table->longText('description')->nullable();
             $table->longText('photo')->nullable();
             $table->integer('stocks')->nullable()->default(0);
             $table->unsignedBigInteger('supplier_id');

@@ -5,21 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Warehouse extends Model
 {
     use HasFactory;
 
-    protected $table = "users";
+    protected $table = "warehouses";
 
     protected $fillable = [
 
-        'account_type',
-        'avatar',
+        'bldg',
         'created_at',
-        'email',
-        'fullname',
+        'floor',
+        'full_addresss',
         'id',
-        'password',
+        'name',
+        'room',
+        'section',
         'updated_at',
 
     ];

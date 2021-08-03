@@ -5,22 +5,24 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Asset extends Model
 {
     use HasFactory;
 
-    protected $table = "users";
+    protected $table = "assets";
 
     protected $fillable = [
 
-        'account_type',
-        'avatar',
         'created_at',
-        'email',
-        'fullname',
+        'description',
         'id',
-        'password',
+        'name',
+        'photo',
+        'stocks',
+        'supplier_id',
+        'type_of_asset',
         'updated_at',
+        'warehouse_id',
 
     ];
 
